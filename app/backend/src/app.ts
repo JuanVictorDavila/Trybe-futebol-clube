@@ -1,4 +1,5 @@
 import * as express from 'express';
+import LoginRouter from './routers/loginRouter';
 
 class App {
   public app: express.Express;
@@ -7,6 +8,7 @@ class App {
   constructor() {
     // ...
     this.app = express();
+    this.app.use(express.json());
     this.config();
     // ...
   }
@@ -27,6 +29,7 @@ class App {
   public start(PORT: string | number):void {
     // ...
     this.app.listen(PORT);
+    this.app.use(LoginRouter);
   }
 }
 
