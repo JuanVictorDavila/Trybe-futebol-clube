@@ -6,7 +6,7 @@ export default class LoginMiddleware {
     if (!info.email) {
       return res.status(400).json({ message: 'All fields must be filled' });
     }
-    if (!info.password) {
+    if (!info.password || !info.password) {
       return res.status(400).json({ message: 'All fields must be filled' });
     }
     next();
