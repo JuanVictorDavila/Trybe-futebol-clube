@@ -1,11 +1,7 @@
 import Teams from '../models/Teams';
+import ITeam from '../../interface/ITeam';
 import Matches from '../models/Matches';
 import Leaderboard from '../../utils/LeaderBoard';
-
-interface ITeam {
-  id: number,
-  teamName: string
-}
 
 export default class LeaderboardService {
   static async getHomeMatches() {
@@ -16,6 +12,7 @@ export default class LeaderboardService {
       const teamInfo = Leaderboard.getHomeTeamInfo(filtered);
       return { name: team.teamName, ...teamInfo };
     });
+    
     return Leaderboard.sortArray(allTeamsInfo);
   }
 
@@ -27,6 +24,7 @@ export default class LeaderboardService {
       const teamInfo = Leaderboard.getAwayTeamInfo(filtered);
       return { name: team.teamName, ...teamInfo };
     });
+    
     return Leaderboard.sortArray(allTeamsInfo);
   }
 
@@ -41,6 +39,7 @@ export default class LeaderboardService {
       const teamInfo = Leaderboard.joinHomeAway(teamHomeInfo, teamAwayInfo);
       return { name: team.teamName, ...teamInfo };
     });
+    
     return Leaderboard.sortArray(allTeamsInfo);
   }
 }

@@ -5,7 +5,7 @@ export default class Token {
   private static secret: string = fs.readFileSync('jwt.evaluation.key', 'utf8');
 
   static create(payload: object) {
-    return jwt.sign(payload, this.secret, { algorithm: 'HS256', expiresIn: '7d' });
+    return jwt.sign(payload, this.secret, { algorithm: 'HS256', expiresIn: '1d' });
   }
 
   static decode(token: string) {

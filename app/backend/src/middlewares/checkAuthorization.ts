@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import Token from '../utils/Token';
 
-export default class CheckAuth {
+export default class CheckAuthorization {
   static jwtValidator(req: Request, res: Response, next: NextFunction) {
     const token = req.headers;
     if (typeof token.authorization === 'string') {

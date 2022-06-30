@@ -18,6 +18,7 @@ Matches.init({
     autoIncrement: true,
     primaryKey: true,
   },
+
   homeTeam: DataTypes.INTEGER,
   homeTeamGoals: DataTypes.INTEGER,
   awayTeam: DataTypes.INTEGER,
@@ -32,7 +33,6 @@ Matches.init({
 
 Matches.belongsTo(Teams, { foreignKey: 'homeTeam', as: 'teamHome' });
 Matches.belongsTo(Teams, { foreignKey: 'awayTeam', as: 'teamAway' });
-
 Teams.hasMany(Matches, { foreignKey: 'homeTeam', as: 'teamHome' });
 Teams.hasMany(Matches, { foreignKey: 'awayTeam', as: 'teamAway' });
 

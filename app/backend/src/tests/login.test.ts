@@ -10,6 +10,9 @@ import { app } from '../app';
 
 import Users from '../database/models/users';
 
+/* import userInfoMock from './mock/userInfoMock';
+import userInfoMockWithoutPassword from './mock/userInfoMockWithoutPassword'; */
+
 chai.use(chaiHttp);
 
 const { expect } = chai;
@@ -44,7 +47,7 @@ describe('/login', () => {
     (Users.findOne as sinon.SinonStub).restore();
   })
 
-  it('/login should return status 200 and the correct object when login is successful', async () => {
+  it('/login deve retornar status 200 e o objeto quando o login for bem sucedido', async () => {
     chaiHttpResponse = await chai
        .request(app)
        .post('/login')
