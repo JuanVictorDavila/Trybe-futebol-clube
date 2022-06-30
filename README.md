@@ -1,25 +1,5 @@
 # Boas vindas ao repositório do Trybe Futebol Clube!
 
-Para realizar o projeto, atente-se a cada passo descrito a seguir, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
-# Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta e do Manual da Pessoa Estudante da Trybe.
-
-# Entregáveis
-
-Aqui você terá acesso ao contexto geral do projeto, ou seja, seu tema central e o prazo de entrega.
-
-<details>
-  <summary><strong>🤷🏽‍♀️ Como entregar</strong></summary><br />
-
-  Para entregar o seu projeto você deverá criar um *Pull Request* neste repositório.
-
-  Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/course/4d67f5b4-34a6-489f-a205-b6c7dc50fc16/) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
-</details>
-
 <details>
   <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
 
@@ -67,67 +47,12 @@ O projeto é composto de 4 entidades importantes para sua estrutura:
     - Depois de subir o container você pode acessar o `front-end` via `http://localhost:3000/` como os testes farão. 
 
 
-<details>
-  <summary><strong>🗓 Data de Entrega</strong></summary><br />
-
-  * Projeto individual;
-  * Serão `7` dias de projeto;
-  * Data de entrega para avaliação final do projeto: `24/06/2022 14:00`.
-
-</details>
-
 # Orientações
 
 
 ## Antes de começar a desenvolver 
 
 Leia essa parte atentamente, pois aqui você encontrará informações importantes para preparar corretamente o setup do projeto.
-
-<details>
-  <summary><strong> Iniciando o projeto</strong></summary><br />
-
-  1. Clone o repositório
-    * `git clone https://github.com/tryber/sd-016-a-trybe-futebol-clube.git`.
-    * Entre na pasta do repositório que você acabou de clonar:
-      * `cd sd-016-a-trybe-futebol-clube`
-
-  2. Instale as dependências [**Caso existam**]
-    * `npm install`
-
-  3. Crie uma branch a partir da branch `master`
-    * Verifique que você está na branch `master`
-      * Exemplo: `git branch`
-    * Se não estiver, mude para a branch `master`
-      * Exemplo: `git checkout master`
-    * Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-      * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-      * Exemplo: `git checkout -b joaozinho-sd-016-a-trybe-futebol-clube`
-
-  4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-    * Verifique que as mudanças ainda não estão no _stage_
-      * Exemplo: `git status` (deve aparecer listada a pasta _joaozinho_ em vermelho)
-    * Adicione o novo arquivo ao _stage_ do Git
-        * Exemplo:
-          * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-          * `git status` (deve aparecer listado o arquivo _joaozinho/README.md_ em verde)
-    * Faça o `commit` inicial
-        * Exemplo:
-          * `git commit -m 'iniciando o projeto x'` (fazendo o primeiro commit)
-          * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-  5. Adicione a sua branch com o novo `commit` ao repositório remoto
-    * Usando o exemplo anterior: `git push -u origin joaozinho-sd-016-a-trybe-futebol-clube`
-
-  6. Crie um novo `Pull Request` _(PR)_
-    * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-[nome-do-projeto]/pulls)
-    * Clique no botão verde _"New pull request"_
-    * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-    * Clique no botão verde _"Create pull request"_
-    * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-    * **Não se preocupe em preencher mais nada por enquanto!**
-    * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-[nome-do-projeto]/pulls) e confira que o seu _Pull Request_ está criado
-
-</details>
 
 
 
@@ -304,27 +229,6 @@ Na sua máquina você deve ter:
 
 ## Durante o desenvolvimento 
 
-Aqui você encontrará orientações e dicas que ajudarão muito no desenvolvimento do projeto. Sempre que tiver dúvidas ou bugs aparecerem, dê uma olhada aqui. 👀
-
-<details>
-  <summary><strong>⌨️ Boas práticas</strong></summary><br/>
-
-</br>
-
-* Versione seu projeto
-
-  * Faça `commits` das alterações que você fizer no código regularmente;
-
-  * Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto.
-
-  * Os comandos que você utilizará com mais frequência são:
-    1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_;
-    2. `git add` _(para adicionar arquivos ao stage do Git)_;
-    3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_;
-    4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_;
-    5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_.
-
-</details>
 
 <details>
   <summary><strong>⚠️ Inicialização do compose e verificação dos logs das aplicações </strong></summary><br />
@@ -509,46 +413,7 @@ Para rodar testes de cobertura no seu back-end, utilize o comando: `npm run test
 </details>
 
 	
-## Depois de terminar o desenvolvimento
-
-Aqui você encontra orientações opcionais para seguir após o desenvolvimento do projeto e finalizar com "chave de ouro". 🔑
-
-
-<details>
-  <summary><strong>🤝 Como entregar o projeto?</strong></summary><br/>
-
-  Para "entregar" seu projeto, siga os passos a seguir:
-
-  - Vá até a página DO SEU Pull Request, adicione a label de "code-review" e marque seus colegas
-    - No menu à direita, clique no *link* "Labels" e escolha a label code-review
-    - No menu à direita, clique no *link* "Assignees" e escolha o seu usuário
-    - No menu à direita, clique no *link* "Reviewers" e digite students, selecione o time tryber/students-sd-0x
-
- ➡️ Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-⚠️**Atenção:** lembre-se de garantir que todas as _issues_ comentadas pelo Linter estão resolvidas!
-
-</details>
-
-<details>
-  <summary><strong>🗣 Nos dê feedbacks sobre o projeto!</strong></summary><br />
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. 
-**Leva menos de 3 minutos!**
-
-[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-⚠️**Atenção** o avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
-
-</details>
-
-<details>
-  <summary><strong>🗂 Compartilhe seu portfólio!</strong></summary><br />
-
-  Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
-
-</details>
-
+	
 <br/>
 	
 
